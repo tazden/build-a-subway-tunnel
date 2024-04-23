@@ -1,0 +1,23 @@
+<!-- res/drawable/custom_progress_bar_horizontal.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Базовая форма прогресса (линии) -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <size android:height="4dp" /> <!-- Установите желаемую высоту прогресс-бара -->
+            <stroke
+                android:width="2dp"
+                android:color="@android:color/white" />
+            <corners android:radius="35dp" />
+        </shape>
+    </item>
+    <!-- Линия прогресса -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <size android:height="4dp" /> <!-- Установите желаемую высоту прогресс-бара -->
+                <solid android:color="@android:color/holo_green_light" />
+                <corners android:radius="35dp" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>
